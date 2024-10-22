@@ -28,7 +28,7 @@ This is my personal portfolio website built to display my projects, skills, and 
 
 ### HTML5
 
-### CSS3
+### SCSS
 
 ### JavaScript (ES6+)
 
