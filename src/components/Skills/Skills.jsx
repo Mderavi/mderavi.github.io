@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Skills.scss";
-import { SKILLS } from "../../units/data";
+import { SKILLS } from "../../utils/data";
 import SkillCard from "./SkillCard/SkillCard";
 import SkillInfoCard from "./SkillCardInfo/SkillInfoCard";
 
@@ -32,7 +32,7 @@ const Skills = () => {
 
         <div className="skills-info">
           <SkillInfoCard
-            handeling={selectedSkill.title}
+            heading={selectedSkill.title}
             skills={selectedSkill.skills}
           />
         </div>

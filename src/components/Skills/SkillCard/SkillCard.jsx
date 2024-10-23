@@ -1,16 +1,19 @@
-import React from 'react'
-import './SkillCard.scss'
- 
-const SkillCard = ({title, iconUrl, isActive, onClick}) => {
+import React from "react";
+import "./SkillCard.scss";
+
+const SkillCard = ({ title, iconUrl, isActive, onClick }) => {
   return (
-    <div className= {`skills-card ${isActive ? " active" : ""})`}  onClick={() => onClick()}>
-        <div className="skill-icon">
-            <img src={iconUrl} alt={title}/>
-        </div>
+    <div
+      className={`skills-card ${isActive ? " active" : ""})`}
+      onClick={() => onClick()}
+    >
+      <div className="skill-icon">
+        <img src={iconUrl} alt={title} />
+      </div>
 
-        <span>{title}</span>
+      <span>{title}</span>
     </div>
-  )
-} 
+  );
+};
 
-export default SkillCard
+export default SkillCard;
