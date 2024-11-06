@@ -48,3 +48,9 @@
   background: linear-gradient(90deg, #ae94fe -50%, #7d60e6 50%);
   transition: all 0.5s ease-in-out;
 }
+
+@media (max-width: 1025px) {
+}
+.skills-info-card h6 {
+  font-size: 1.1rem;
+}
