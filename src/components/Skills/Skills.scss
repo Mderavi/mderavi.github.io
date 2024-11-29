@@ -47,7 +47,7 @@
   flex: 1;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .skills-content {
     flex-direction: column-reverse;
     gap: 3rem;
@@ -77,15 +77,5 @@
 @media (max-width: 1025px) {
   .skills {
     padding-left: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .skills {
-    grid-template-columns: 1fr;
-  }
-  .skills,
-  .skills-content {
-    grid-gap: 2rem;
   }
 }

@@ -1,4 +1,4 @@
-$base-color: #4bb8d0;
+$base-color: #5abacf;
 $secondery-color: #3e8798da;
 
 .skills-card {
@@ -10,7 +10,7 @@ $secondery-color: #3e8798da;
   backdrop-filter: blur(1rem);
   position: relative;
   cursor: pointer;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 
 .skills-card:hover,
@@ -51,8 +51,8 @@ $secondery-color: #3e8798da;
     font-size: 1rem;
   }
   .skill-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
   }
   .skill-icon img {
     width: 1.8rem;
