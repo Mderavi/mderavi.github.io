@@ -1,0 +1,48 @@
+$base-color: #52c9e3;
+
+.contact-info-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-info-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.4rem 1.8rem;
+  border-radius: 1rem;
+  border: 1.5px solid $base-color;
+  background: rgba(6, 4, 23, 0.7);
+}
+
+.contact-info-card .icon-wrapper {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.8rem;
+  background: $base-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-card .icon-wrapper img {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.contact-info-card .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.contact-info-card .title {
+  font-size: 0.9rem;
+  color: #cfd8dc;
+}
+
+.contact-info-card .value {
+  font-size: 1rem;
+  font-weight: 500;
+}
+

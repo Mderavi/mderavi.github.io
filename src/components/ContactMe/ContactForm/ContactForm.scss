@@ -1,0 +1,62 @@
+$base-color: #52c9e3;
+$secondary-color: #74b6c5;
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  flex: 1;
+  padding: 0.9rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 1.5px solid $base-color;
+  background-color: transparent;
+  color: #f1f1f1;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: $secondary-color;
+}
+
+.contact-form .send-btn {
+  align-self: stretch;
+  padding: 0.9rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 1.5px solid $base-color;
+  background: transparent;
+  color: $base-color;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.contact-form .send-btn:hover {
+  background: $base-color;
+  color: #060417;
+}
+
+@media (max-width: 768px) {
+  .contact-form .form-row {
+    flex-direction: column;
+  }
+}
+

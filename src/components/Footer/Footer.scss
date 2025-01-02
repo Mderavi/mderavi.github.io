@@ -1,0 +1,23 @@
+$base-color: #52c9e3;
+$secondary-color: #74b6c5;
+
+.footer {
+  margin-top: 3rem;
+  background: linear-gradient(90deg, $base-color, $secondary-color);
+  color: #060417;
+}
+
+.footer-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0.9rem 1.5rem;
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    text-align: center;
+  }
+}
+

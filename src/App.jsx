@@ -1,35 +1,23 @@
-<<<<<<< HEAD
-import logo from './logo.svg';
-import './App.scss';
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import Skills from './components/Skills/Skills';
-=======
-import logo from "./logo.svg";
+import logo from "./MahsaLogo-1.svg";
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Skills from "./components/Skills/Skills";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
->>>>>>> 94f5042 (update css for color)
+import ContactMe from "./components/ContactMe/ContactMe";
+import Footer from "./components/Footer/Footer";
 
-function App() {
+function App() {a
   return (
     <>
-<<<<<<< HEAD
-    <Navbar />
-    <div className="container">
-     <Hero />
-     <Skills />
-    </div>
-=======
       <Navbar />
       <div className="container">
         <Hero />
         <Skills />
         <WorkExperience />
+        <ContactMe />
       </div>
->>>>>>> 94f5042 (update css for color)
+      <Footer />
     </>
   );
 }
