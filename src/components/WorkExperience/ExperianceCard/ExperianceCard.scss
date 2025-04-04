@@ -1,5 +1,6 @@
 $base-color: #5abacf;
 $secondery-color: #3e8798da;
+$background: #0e1729d6;
 
 .work-experience-card {
   background: #130f2a;
@@ -45,7 +46,7 @@ $secondery-color: #3e8798da;
 
 @media (max-width: 768px) {
   .work-experience-card {
-    margin: 0;
+    margin: 0.3rem;
   }
   .work-experience-card h6 {
     font-size: 0.95rem;

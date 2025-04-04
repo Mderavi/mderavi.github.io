@@ -23,7 +23,9 @@ const ContactMe = () => {
               href="https://github.com/Mderavi"
             />
           </div>
-          <ContactForm />
+          <div style={{ flex: 1 }}>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </section>

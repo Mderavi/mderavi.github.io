@@ -5,12 +5,11 @@ const Hero = () => {
   return (
     <section id="home" className="hero-container">
       <div className="hero-content">
-        <h2>what do you do?</h2>
+        <h2>Innovative Front-End Developer</h2>
         <p>
           I’m a front end developer based in sunny Sydney, Australia. I enjoy
-          turning complex problems into the simple, beautiful and intuitive
-          webpage. When I’m not coding, you’ll find me cooking, gardening or
-          jugging out in the park.
+          Transfering design into engaging, user-friendly digital experience.
+          When I’m not coding, you’ll find me cooking, gardening or jugging out.
         </p>
       </div>
       <div className="hero-img">

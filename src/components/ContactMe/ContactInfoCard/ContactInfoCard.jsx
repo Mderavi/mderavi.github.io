@@ -26,4 +26,3 @@ const ContactInfoCard = ({ iconSrc, title, value, href }) => {
 };
 
 export default ContactInfoCard;
-
