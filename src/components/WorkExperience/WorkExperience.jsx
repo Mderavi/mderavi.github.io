@@ -29,16 +29,10 @@ const WorkExperience = () => {
       <h5>Work Experience</h5>
       <div className="experience-content">
         <div className="arrow-right">
-          <span className="material-sympols-outlined">
-            chevron-right
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </span>
+          <span className="material-icons"> arrow_back_ios</span>
         </div>
         <div className="left-right">
-          <span className="material-sympols-outlined">
-            chevron-left
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-          </span>
+          <span className="material-icons"> arrow_forward_ios</span>
         </div>
       </div>
 
