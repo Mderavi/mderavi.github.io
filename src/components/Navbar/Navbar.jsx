@@ -1,9 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import MobileNav from "../MobileNav/MobileNav";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onscroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", onscroll);
+
+    return () => window.removeEventListener("scroll", onscroll);
+  }, []);
 
   const toggleMenu = () => {
     setOpenMenu((prev) => !prev);
@@ -27,7 +41,7 @@ const Navbar = () => {
   return (
     <>
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
-      <nav className="nav-wrapper">
+      <nav className={`nav-wrapper ${scrolled ? "scrolled" : ""}`}>
         <div className="nav-content">
           <img
             className="logo"

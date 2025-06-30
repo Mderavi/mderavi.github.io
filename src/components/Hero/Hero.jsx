@@ -7,15 +7,13 @@ const Hero = () => {
       <div className="hero-content">
         <h2>Innovative Front-End Developer</h2>
         <p>
-          I’m a front end developer based in sunny Sydney, Australia. I enjoy
+          I'm a front end developer based in sunny Sydney, Australia. I enjoy
           Transfering design into engaging, user-friendly digital experience.
-          When I’m not coding, you’ll find me cooking, gardening or jugging out.
+          When I'm not coding, you'll find me cooking, gardening or jugging out.
         </p>
       </div>
       <div className="hero-img">
         <div>
-          
-
           <img src="./assets/img/hero.png" alt="Front end developer" />
         </div>
         

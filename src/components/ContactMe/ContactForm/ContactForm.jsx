@@ -53,7 +53,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form className="contact-form needs-validation" action="https://api.web3forms.com/submit" method="POST" >
+    <form className="contact-form needs-validation" action="https://api.web3forms.com/submit" method="POST" onSubmit={handleSubmit}>
       <input type="hidden" name="access_key" value="ed634784-9429-4bc0-afe1-26ba4bdd63f3" />
       <input type="hidden" name="subject" value="New Portfolio Contact Form Submission" />
       <div className="form-row">

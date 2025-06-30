@@ -18,6 +18,14 @@ $secondery-color: #3e8798da;
   margin: 0 auto;
 }
 
+nav {
+  transition: all 0.3s ease;
+}
+
+nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); // dark background
+  color: white;
+}
 .logo {
   width: 5rem;
   height: auto;
