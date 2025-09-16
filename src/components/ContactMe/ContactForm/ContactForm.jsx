@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactForm.scss";
+import Swal from "sweetalert2";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -20,7 +21,11 @@ const ContactForm = () => {
     const { firstName, lastName, email, message } = formData;
 
     if (!email || !message) {
-      alert("Please fill in your email and message.");
+      Swal.fire({
+        title: "Error!",
+        text: "Please fill in your email and message.",
+        icon: "error",
+      });
       return;
     }
 
@@ -36,7 +41,11 @@ const ContactForm = () => {
       const data = await response.json();
 
       if (data.success) {
-        alert("Thank you! Your message has been sent successfully.");
+        Swal.fire({
+          title: "Success!",
+          text: "Your message has been sent successfully!",
+          icon: "success",
+        });
         // Reset form
         setFormData({
           firstName: "",
@@ -45,10 +54,18 @@ const ContactForm = () => {
           message: "",
         });
       } else {
-        alert("There was an error sending your message. Please try again.");
+        Swal.fire({
+          title: "Error!",
+          text: "There was an error sending your message. Please try again.",
+          icon: "error",
+        });
       }
     } catch (error) {
-      alert("There was an error sending your message. Please try again.");
+      Swal.fire({
+        title: "Error!",
+        text: "There was an error sending your message. Please try again.",
+        icon: "error",
+      });
     }
   };
 
@@ -102,4 +119,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-

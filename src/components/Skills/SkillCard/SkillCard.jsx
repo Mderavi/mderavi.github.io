@@ -7,9 +7,9 @@ const SkillCard = ({ title, iconUrl, isActive, onClick }) => {
       className={`skills-card ${isActive ? " active" : ""})`}
       onClick={() => onClick()}
     >
-      <div className="skill-icon">
+      {/* <div className="skill-icon">
         <img src={iconUrl} alt={title} />
-      </div>
+      </div> */}
 
       <span>{title}</span>
     </div>

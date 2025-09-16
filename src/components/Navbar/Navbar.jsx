@@ -45,10 +45,9 @@ const Navbar = () => {
         <div className="nav-content">
           <img
             className="logo"
-            src="/assets/img/MahsaLogo-1.svg"
+            src="./assets/img/MahsaLogo-1.svg"
             alt="Mahsa Deravi"
           />
-
           <ul>
             <li>
               <button
