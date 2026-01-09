@@ -6,11 +6,11 @@ const ExperianceCard = ({ details }) => {
     <div className="work-experience-card">
       <h6>{details.title}</h6>
       <div className="work-duration">{details.date}</div>
-      <uL>
+      <ul>
         {details.responsibilities.map((item) => (
           <li key={item}>{item}</li>
         ))}
-      </uL>
+      </ul>
     </div>
   );
 };

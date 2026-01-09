@@ -22,15 +22,22 @@ const Navbar = () => {
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
-      {/* <nav className="nav-wrapper"> */}
       <nav className={scrolled ? "scrolled" : ""}>
         <div className="nav-content">
           <img
             className="logo"
-            src="./assets/img/MahsaLogo-1.svg"
+            src="/assets/img/MahsaLogo-1.svg"
             alt="Mahsa"
           />
           <ul>
@@ -49,17 +56,21 @@ const Navbar = () => {
                 Work experience
               </a>
             </li>
-            <li>
-              <a className="nav-item" href="#gallery">
-                Gallery
-              </a>
-            </li>
-            <button className="contact-btn" id="contact" onClick={() => {}}>
+            <button
+              className="contact-btn"
+              onClick={scrollToContact}
+              aria-label="Contact Me"
+            >
               Contact Me
             </button>
           </ul>
 
-          <button className="menu-btn" onClick={toggleMenu}>
+          <button
+            className="menu-btn"
+            onClick={toggleMenu}
+            aria-label={openMenu ? "Close menu" : "Open menu"}
+            aria-expanded={openMenu}
+          >
             <span
               className="material-symbols-outlined"
               style={{ fontSize: "1.8rem" }}
