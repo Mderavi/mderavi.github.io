@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="nav-content">
           <img
             className="logo"
-            src="./assets/img/MahsaLogo-1.svg"
+            src="/assets/img/MahsaLogo-1.svg"
             alt="Mahsa Deravi"
           />
           <ul>
@@ -85,12 +85,17 @@ const Navbar = () => {
                 Gallery
               </button>
             </li>
-            <button className="contact-btn" type="button" onClick={scrollToContact}>
+            <button className="contact-btn" type="button" onClick={scrollToContact} aria-label="Contact Me">
               Contact Me
             </button>
           </ul>
 
-          <button className="menu-btn" onClick={toggleMenu}>
+          <button
+            className="menu-btn"
+            onClick={toggleMenu}
+            aria-label={openMenu ? "Close menu" : "Open menu"}
+            aria-expanded={openMenu}
+          >
             <span
               className="material-symbols-outlined"
               style={{ fontSize: "1.8rem" }}

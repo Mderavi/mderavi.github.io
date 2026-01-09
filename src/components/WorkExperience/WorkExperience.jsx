@@ -25,21 +25,35 @@ const WorkExperience = () => {
     ],
   };
   const slideRight = () => {
-    sliderRef.current.slickNext();
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
   };
   const slideLeft = () => {
-    sliderRef.current.slickPrev();
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
   };
   return (
     <section id="experience" className="experiance-container">
       <h5>Work Experience</h5>
       <div className="experience-content">
-        <div className="arrow-right" onClick={slideRight}>
+        <button
+          className="arrow-right"
+          onClick={slideRight}
+          aria-label="Next slide"
+          type="button"
+        >
           <span className="material-icons">arrow_forward_ios</span>
-        </div>
-        <div className="arrow-left" onClick={slideLeft}>
+        </button>
+        <button
+          className="arrow-left"
+          onClick={slideLeft}
+          aria-label="Previous slide"
+          type="button"
+        >
           <span className="material-icons">arrow_back_ios</span>
-        </div>
+        </button>
       </div>
 
       <div className="experience-content">

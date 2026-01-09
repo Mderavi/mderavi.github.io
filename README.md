@@ -85,9 +85,36 @@ Open your browser and navigate to http://localhost:3000 to see the portfolio in 
 
 You can view the live version of this portfolio by visiting the following URL:
 
-Link to Live Portfolio (Insert your live portfolio URL here)
+**Live Portfolio:** [https://mderavi.github.io](https://mderavi.github.io)
 
 Feel free to explore the projects listed, and use the contact form to reach out to me!
+
+## Deployment
+
+This portfolio is deployed to GitHub Pages. There are two ways to deploy:
+
+### Automatic Deployment (Recommended)
+
+The project uses GitHub Actions for automatic deployment. Every time you push to the `main` branch, the site will automatically build and deploy to GitHub Pages.
+
+**Setup Steps:**
+1. Go to your repository settings on GitHub
+2. Navigate to **Settings** → **Pages**
+3. Under **Source**, select **GitHub Actions**
+4. The workflow will automatically run on every push to `main`
+
+### Manual Deployment
+
+To manually deploy the site:
+
+```bash
+npm run deploy
+```
+
+This command will:
+1. Build the production-ready files
+2. Deploy them to the `gh-pages` branch
+3. Make your site available at `https://mderavi.github.io`
 
 #### Contributing
 

@@ -3,6 +3,7 @@ import "./ContactForm.scss";
 import Swal from "sweetalert2";
 
 const ContactForm = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -17,6 +18,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     const { firstName, lastName, email, message } = formData;
 
@@ -26,6 +28,7 @@ const ContactForm = () => {
         text: "Please fill in your email and message.",
         icon: "error",
       });
+      setIsSubmitting(false);
       return;
     }
 
@@ -53,19 +56,18 @@ const ContactForm = () => {
           email: "",
           message: "",
         });
+        e.target.reset();
       } else {
-        Swal.fire({
-          title: "Error!",
-          text: "There was an error sending your message. Please try again.",
-          icon: "error",
-        });
+        throw new Error(data.message || "Failed to send message");
       }
     } catch (error) {
       Swal.fire({
         title: "Error!",
-        text: "There was an error sending your message. Please try again.",
+        text: error.message || "There was an error sending your message. Please try again.",
         icon: "error",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -111,8 +113,8 @@ const ContactForm = () => {
           required
         />
       </div>
-      <button type="submit" className="send-btn">
-        SEND
+      <button type="submit" className="send-btn" disabled={isSubmitting}>
+        {isSubmitting ? "SENDING..." : "SEND"}
       </button>
     </form>
   );
