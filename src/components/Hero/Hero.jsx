@@ -3,7 +3,7 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <section className="hero-container">
+    <section id="home" className="hero-container">
       <div className="hero-content">
         <h2>what do you do?</h2>
         <p>
@@ -15,13 +15,15 @@ const Hero = () => {
       </div>
       <div className="hero-img">
         <div>
-          <div className="tech-icon">
-            <img src="./assets/img/react-e.png" alt="" />
-          </div>
+          
 
-          <img src="./assets/img/md.jpg" alt="Front end developer" />
+          <img src="./assets/img/hero.png" alt="Front end developer" />
         </div>
+        
         <div>
+        <div className="tech-icon">
+            <img src="./assets/img/react-e.png" alt="react icon" />
+          </div>
           <div className="tech-icon">
             <img src="./assets/img/css-e.png" alt="css icon" />
           </div>

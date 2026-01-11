@@ -1,3 +1,6 @@
+$base-color: #5abacf;
+$secondery-color: #3e8798da;
+
 .skills-container {
   margin: 4rem 0;
   position: relative;
@@ -8,8 +11,8 @@
   content: " ";
   width: 28rem;
   height: 28rem;
-  border-radius: 28.125rem;
-  background: #7c66e3;
+  border-radius: 25.125rem;
+  background: linear-gradient(180deg, $base-color 0%, $secondery-color 90%);
   position: absolute;
   z-index: -1;
   filter: blur(200px);
@@ -21,13 +24,13 @@
 }
 
 .skills-container::before {
-  background: #9e51b9;
+  background: $base-color;
   bottom: 0rem;
   right: 0rem;
 }
 .skills-container h5 {
   font-size: 1.5rem;
-  font-weight: 600px;
+  font-weight: 600;
   margin-bottom: 3.5rem;
 }
 

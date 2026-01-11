@@ -13,8 +13,8 @@ const ContactMe = () => {
             <ContactInfoCard
               iconSrc="/assets/img/envelope.svg"
               title="gmail"
-              value="hello@mahsa.com"
-              href="mailto:hello@mahsa.com"
+              value="deravi.mahsa@gmail.com"
+              href="mailto:deravi.mahsa@gmail.com"
             />
             <ContactInfoCard
               iconSrc="/assets/img/github.svg"
@@ -31,4 +31,3 @@ const ContactMe = () => {
 };
 
 export default ContactMe;
-

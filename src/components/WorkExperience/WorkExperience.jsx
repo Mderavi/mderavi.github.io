@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./WorkExperience.css";
+import "./WorkExperience.scss";
 import ExperianceCard from "./ExperianceCard/ExperianceCard";
 import { WORK_EXPERIENCE } from "../../utils/data";
 import Slider from "react-slick/lib/slider";
@@ -24,15 +24,21 @@ const WorkExperience = () => {
       },
     ],
   };
+  const slideRight = () => {
+    sliderRef.current.slickNext();
+  };
+  const slideLeft = () => {
+    sliderRef.current.slickPrev();
+  };
   return (
-    <section className="experiance-container">
+    <section id="experience" className="experiance-container">
       <h5>Work Experience</h5>
       <div className="experience-content">
-        <div className="arrow-right">
-          <span className="material-icons"> arrow_back_ios</span>
+        <div className="arrow-right" onClick={slideRight}>
+          <span className="material-icons">arrow_forward_ios</span>
         </div>
-        <div className="left-right">
-          <span className="material-icons"> arrow_forward_ios</span>
+        <div className="arrow-left" onClick={slideLeft}>
+          <span className="material-icons">arrow_back_ios</span>
         </div>
       </div>
 
