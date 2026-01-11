@@ -48,6 +48,8 @@ nav.scrolled {
   color: #fff;
   position: relative;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .nav-item::before {
@@ -67,6 +69,7 @@ nav.scrolled {
   width: 100%;
   transform: translateX(0);
   opacity: 1;
+  background-color: transparent;
 }
 
 .contact-btn {
